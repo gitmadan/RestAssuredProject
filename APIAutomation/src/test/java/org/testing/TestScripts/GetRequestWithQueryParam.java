@@ -6,11 +6,13 @@ import java.util.Properties;
 import org.apache.http.protocol.HTTP;
 import org.testing.TestSteps.HTTPMethods;
 import org.testing.utilities.PropertiesFileLoad;
+import org.testng.annotations.Test;
 
 import com.jayway.restassured.response.Response;
 
 public class GetRequestWithQueryParam {
 	
+	@Test
 	public void tc3() throws IOException 
 	{
 		Properties pr=PropertiesFileLoad.propertiesFile();

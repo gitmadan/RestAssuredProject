@@ -10,6 +10,7 @@ import org.testing.utilities.JsonFileRead;
 import org.testing.utilities.JsonVariableReplacement;
 import org.testing.utilities.PropertiesFileLoad;
 import org.testing.utilities.ResponseExtractionUsingJsonPath;
+import org.testng.annotations.Test;
 
 import com.jayway.restassured.response.Response;
 
@@ -22,6 +23,8 @@ import ResponseValidation.ResponseStatusCodeValidation;
 public class PostRequestTC {
 	static String id;
 	static String lastname;
+	
+	@Test
 	public void tc1() throws IOException {
 		
 	String Payload=JsonFileRead.bodyDataRead("../APIAutomation/Payload.json");    // reading existing json for payload

@@ -5,6 +5,7 @@ import java.util.Properties;
 
 import org.testing.TestSteps.HTTPMethods;
 import org.testing.utilities.PropertiesFileLoad;
+import org.testng.annotations.Test;
 
 import com.jayway.restassured.response.Response;
 
@@ -13,6 +14,7 @@ import ResponseValidation.ResponseStatusCodeValidation;
 
 public class GetRequestTC {
 	
+	@Test
 	public void tc2() throws IOException
 	{
 		Properties pr=PropertiesFileLoad.propertiesFile();                                 // properties file load
